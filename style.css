@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@300;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+body{
+
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main-prev-card{
+    display: flex;
+    width: 600px;
+    height: 480px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+
+.main-prev-card > button{
+    height: 480px;
+    width: 270px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    
+}
+
+.product-img{
+    height: 480px;
+    width: 280px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    object-fit: cover;
+}
+
+.description > ul{
+    list-style: none;
+    text-align: left;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.description > ul > li{
+    margin-bottom: 10px;
+}
+
+
+.light{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: hsl(212, 21%, 14%);
+    margin-top: 20px;
+}
+
+.strong{
+    font-size: 2em;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+}
+.discount{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.btn-cart{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.btn-cart > a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.attribution{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+
+    .main-prev-card{
+        flex-direction: column;
+        height: 700px;
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .main-prev-card > button{
+        opacity: 1;
+        height: 250px;
+        width: 100%;
+        
+    }
+
+    .product-img{
+        height: 250px;
+        width: 100%;
+        object-fit: fill;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+
+    .description > ul{
+        margin-top: -60px;
+        margin-left: 20px;
+    }
+
+    .price{
+        margin-left: 20px;
+    }
+
+    .btn-cart{
+        width: 320px;
+    }
+  }
